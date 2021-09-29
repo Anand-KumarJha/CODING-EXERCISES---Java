@@ -1,0 +1,20 @@
+public class FirstLastDigitSum {
+
+    public static int sumFirstAndLastDigit(int number){
+
+        if (number < 0){
+            return -1;
+        }
+
+        int LSB = number % 10 ;
+
+        while (number > 9){
+
+            number = number / 10;
+
+        }
+        return LSB + number;
+
+    }
+
+}
